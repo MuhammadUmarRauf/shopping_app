@@ -36,7 +36,11 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Please Select a Size!!!'),
+          content: Text(
+            'Please Select a Size!!!',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          backgroundColor: Colors.black,
         ),
       );
     }
